@@ -1,61 +1,111 @@
-
-
-.calCont{
-    /* border: solid white 3px; */
-    width: 18vw;
+/* Wrapper to align calculator and history side by side */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2vw;
 }
 
-.screen{
-    border: solid rgb(255, 255, 255) 2px;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-.keysCont{
-    /* height: 30vh; */
-    /* border: solid rgb(255, 0, 0) 3px; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-.keysCont button{
-    width: 3.5vw;
-    padding: 0.9vw 1vw;
-    margin: 0.5vh;
-    border-radius: 5px;
-    /* font-size: 1.2vw; */
-    /* color: white; */
-    background-color: rgb(47, 45, 45);
-}
-.operator{
-    color: rgb(255, 111, 0);
-    font-weight: 700;
-    font-size: 1.4vw;
-}
-.num{
-    font-size: 1.2vw; 
-    color: white;
+/* Calculator container */
+.calCont {
+  width: 18vw;
 }
 
-.screen{
-    color: white;
-    font-size: 3vw;
-    overflow-x: 10;
-    text-align: right ;
-    padding: 1vw;
+/* Display screen */
+.screen {
+  border: solid white 2px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 3vw;
+  text-align: right;
+  padding: 1vw;
 }
 
-.zero{
-    color: white;
-    font-size: 1.2vw;
-    /* padding: 1vw 2vw; */
-    width: 3vw;
+/* Button grid */
+.keysCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
-.head{
-    color: white;
-    text-align: center;
+
+.keysCont button {
+  width: 3.5vw;
+  padding: 0.9vw 1vw;
+  margin: 0.5vh;
+  border-radius: 5px;
+  background-color: rgb(47, 45, 45);
 }
-.disclaimer{
-    color: white;
+
+/* Operator buttons */
+.operator {
+  color: rgb(255, 111, 0);
+  font-weight: 700;
+  font-size: 1.4vw;
+}
+
+/* Number buttons */
+.num {
+  font-size: 1.2vw;
+  color: white;
+}
+
+/* Zero button */
+.zero {
+  color: white;
+  font-size: 1.2vw;
+  width: 3vw;
+}
+
+/* Calculator heading */
+.head {
+  color: white;
+  text-align: center;
+}
+
+/* History panel beside calculator */
+.historyPanel {
+  width: 14vw;
+  padding: 10px;
+  background-color: black;
+  border-radius: 8px;
+  max-height: 60vh;
+  overflow-y: auto;
+  color: white;
+  flex-shrink: 0;
+}
+
+.historyPanel h3 {
+  margin-bottom: 10px;
+  
+}
+
+.historyPanel ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.historyPanel li {
+  font-family: monospace;
+  margin-bottom: 4px;
+  font-size: 1.3vw;
+}
+
+/* History toggle button (inline with keypad) */
+.historyToggle {
+  width: 3.5vw;
+  padding: 0.9vw 1vw;
+  margin: 0.5vh;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: rgb(255, 111, 0);
+  font-size: 1.7vw;
+  border: none;
+  cursor: pointer;
+}
+
+.historyToggle:hover {
+  background-color: #2980b9;
 }

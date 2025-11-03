@@ -5,3 +5,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.clearHistory {
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clearHistory:hover {
+  background-color: #c0392b;
+}
